@@ -1,7 +1,4 @@
 # javascript-2
-JAI RAM
-second git repositry
+learning javascript 
 <br>
-still trying to learn git basics
-<br>
-checking
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api request</title>
+</head>
+<body style="background-color: #212121; color: whitesmoke;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam error tempora necessitatibus velit vitae exercitationem, dignissimos porro quis voluptatibus. Quae, voluptates placeat magnam debitis molestias, sapiente sint vitae ab excepturi, explicabo minima dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugit, nostrum dolorum minima obcaecati reprehenderit corrupti exercitationem ad vel id!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, voluptatibus? Aspernatur, officia tempore. Sint laborum fuga saepe nemo iste, dolorum, reiciendis facere repellendus perspiciatis accusantium veniam? Molestias laborum beatae harum?</p>
+</body>
+<script>
+    const url = "https://api.github.com/users/hiteshchoudhary"
+    const uhr = new XMLHttpRequest()
+    uhr.open("GET" ,url)
+    uhr.onreadystatechange = function ramram(){
+        console.log(uhr.readyState);
+        if(uhr.readyState === 4 ){
+            const data = JSON.parse(this.responseText)
+            console.log(data.followers);
+        }
+    }
+    uhr.send()
+</script>
+</html>
